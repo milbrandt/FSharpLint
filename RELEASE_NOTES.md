@@ -1,3 +1,7 @@
+##### 0.13.1.1 (Backport of 0.13.3) - February 25 2020
+
+* Fix for suppression comment parsing
+
 ##### 0.13.1
 
 * Use structured comments for warning suppression
