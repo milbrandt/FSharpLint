@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "FSharpLint multitargetting project",
+            "type": "coreclr",
+            "request": "launch",
+            // "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/FSharpLint.Console/bin/Debug/netcoreapp3.1/dotnet-fsharplint.dll",
+            "args": ["lint", "FSharpLint.Console/FSharpLint.Console.fsproj"],
+            "cwd": "${workspaceFolder}/src",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        },
+        {
+            "name": "FSharpLint single-target project",
+            "type": "coreclr",
+            "request": "launch",
+            // "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/FSharpLint.Console/bin/Debug/netcoreapp3.1/dotnet-fsharplint.dll",
+            "args": ["lint", "FSharpLint.Core/FSharpLint.Core.fsproj"],
+            "cwd": "${workspaceFolder}/src",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        }
+    ]
+}
